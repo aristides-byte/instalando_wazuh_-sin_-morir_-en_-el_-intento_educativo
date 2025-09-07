@@ -52,7 +52,7 @@ Esta imagen muestra que ya estamos revisando el estado del server:
 
 Para la instalación del agente en Windows se utiliza el siguiente comando generado por wazuh para la instalación del agente via powershell o cmd:
 
-Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.12.0-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='192.168.100.26' WAZUH_AGENT_NAME='nombre de la maquina'
+Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.12.0-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='ip server' WAZUH_AGENT_NAME='nombre de la maquina'
 
 <img width="940" height="136" alt="image" src="https://github.com/user-attachments/assets/e022d536-3fb6-4f80-8015-3225762b3f43" />
 
